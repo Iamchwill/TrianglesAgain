@@ -11,7 +11,11 @@ public class Tester {
     System.out.println(b.equals(c));
     System.out.println(a.equals(b));
     System.out.println(a.distanceTo(b));
-    Triangle t1 = new Triangle(0,0, 0,3, 5,0);
+    Triangle t1 = new Triangle(0,0, 0,3, 4,0);
     Triangle t2 = new Triangle(a, b, d);
+    System.out.println(t1.getPerimeter());
+    System.out.println(t1.getArea());
+    System.out.println(t2.getPerimeter());
+    System.out.println(t2.getArea());
   }
 }
