@@ -24,5 +24,11 @@ public class Tester {
     System.out.println(t1);
     System.out.println(t2);
     System.out.println(t3);
+    t1.setVertex(0, c);
+    System.out.println(t1);
+    t1.setVertex(1, c);
+    System.out.println(t1);
+    t1.setVertex(2, c);
+    System.out.println(t1);
   }
 }
