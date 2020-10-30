@@ -21,5 +21,8 @@ public class Tester {
     System.out.println(t1.classify());
     System.out.println(t2.classify());
     System.out.println(t3.classify());
+    System.out.println(t1);
+    System.out.println(t2);
+    System.out.println(t3);
   }
 }
