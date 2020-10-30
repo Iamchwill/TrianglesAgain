@@ -22,10 +22,25 @@ public class Triangle {
   }
 
   public double getArea() {
-      double semiPeri = getPerimeter()/2.0;
+      double semiPeri = getPerimeter()/2;
       return Math.sqrt(semiPeri *
                       (semiPeri - v1.distanceTo(v2)) *
                       (semiPeri - v1.distanceTo(v3)) *
                       (semiPeri - v2.distanceTo(v3)));
+  }
+
+  public String classify() {
+    double d1 = Math.round(v1.distanceTo(v2)  * 10000) / 10000.0;
+    double d2 = Math.round(v1.distanceTo(v3)  * 10000) / 10000.0;
+    double d3 = Math.round(v2.distanceTo(v3)  * 10000) / 10000.0;
+    if (d1 == d2 && d2 == d3) return "equilateral";
+    if (d1 == d2 || d1 == d3|| d2 == d3) return "isosceles";
+    return "scalene";
+  }
+
+  public String toString() {
+    return  "v1(" + v1.getX() + ", " + v1.getY() + ") " +
+            "v2(" + v2.getX() + ", " + v2.getY() + ") " +
+            "v3(" + v3.getX() + ", " + v3.getY() + ")";
   }
 }

@@ -17,5 +17,9 @@ public class Tester {
     System.out.println(t1.getArea());
     System.out.println(t2.getPerimeter());
     System.out.println(t2.getArea());
+    Triangle t3 = new Triangle(0,0, 4,0, 2,2 * Math.sqrt(3));
+    System.out.println(t1.classify());
+    System.out.println(t2.classify());
+    System.out.println(t3.classify());
   }
 }
